@@ -177,7 +177,7 @@ select DISTINCT review_id, order_id, review_score,review_comment_message,review_
 create or replace table olist_brazildb.gold.sellers_clean as
 select distinct seller_id, seller_zip_code_prefix,seller_state,seller_city from bronze.seller_raw where seller_id is not null;
  
-OLIST_BRAZILDB.BRONZE.PRODUCTS_RAW drop table olist_brazildb.gold.customer_clean
+
 create or replace file format csv_format
 type = 'csv'
 field_optionally_enclosed_by = '"'
