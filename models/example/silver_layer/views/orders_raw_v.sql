@@ -1,0 +1,1 @@
+select * from BRONZE.ORDERS_RAW
