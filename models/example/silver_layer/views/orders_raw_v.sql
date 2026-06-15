@@ -1,6 +1,6 @@
 {{
   config(
-    materialized = "views"
+    materialized = "view"
   )
 }}
 
