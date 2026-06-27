@@ -9,3 +9,10 @@ sources:
     tables:
       - name: orders_raw
       - name: customer_raw
+      - name: sellers_raw
+      - name: payments_raw
+      - name: products_raw
+      - name: orders_items_raw
+      - name: category_names_raw
+      - name: geolocation_raw
+      - name: reviews_raw
