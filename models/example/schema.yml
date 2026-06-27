@@ -1,21 +1,18 @@
 
 version: 2
 
-models:
-    - name: my_first_dbt_model
-      description: "A starter dbt model"
-      columns:
-          - name: id
-            description: "The primary key for this table"
-            tests:
-                - unique
-                - not_null
 
-    - name: my_second_dbt_model
-      description: "A starter dbt model"
-      columns:
-          - name: id
-            description: "The primary key for this table"
-            tests:
-                - unique
-                - not_null
+sources:
+  - name: source
+    database: olist_brazildb   
+    schema: bronze  
+    tables:
+      - name: orders_raw
+      - name: customer_raw
+      - name: sellers_raw
+      - name: payments_raw
+      - name: products_raw
+      - name: orders_items_raw
+      - name: category_names_raw
+      - name: geolocation_raw
+      - name: reviews_raw

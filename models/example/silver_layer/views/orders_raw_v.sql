@@ -1,8 +1,7 @@
 {{
-  config(
-    materialized = "view"
-  )
+    config(
+        materialized = "view"
+    )
 }}
 
-select * from BRONZE.ORDERS_RAW
-
+select * from {{ source('source', 'orders_raw') }}

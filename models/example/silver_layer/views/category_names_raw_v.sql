@@ -4,4 +4,4 @@
     )
 }}
 
-select * from {{ source('source', 'orders_items_raw') }}
+select * from {{ source('source', 'category_names_raw') }}
